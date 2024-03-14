@@ -8,26 +8,27 @@ int main()
     int number;     
     srand(time(0));
     number=rand()%51;
-    cout<<"Guess a number from 1-50, you have 5 attempts to guess: ";
+   
+    cout<<" wWlcome to Magic Number\n Guess a number from 1-50, you have 5 attempts to guess: ";
     for(i=0;i<5;i++)
    
     {
         cin>>n;
         if(number==n) {
-        cout<<"\nWell Done, you guessed the correct number, "<<number;
+        cout<<"\nWell Done, you guessed the Magic Number, "<<number;
         cout<<"\nAttempts you have used: "<<i+1;
         break;
     }
      else if (number>n)
      {
-        cout<<"\nYou guessed less than correct number, Attempts remaining: "<<5-(i+1);
+        cout<<"\nYou guessed less than Magic Number, Attempts remaining: "<<5-(i+1);
         if(5-(i+1)>0) {
-        cout<<"\nAttempt again, choose a number more than last time: ";
+        cout<<"\nAttempt again, Choose a number more than last time: ";
      }
  }
     else if (number<n)
     {
-       cout<<"\nYou guessed more than correct number, Attempts remaining: "<<5-(i+1);
+       cout<<"\nYou guessed more than Magic Number, Attempts remaining: "<<5-(i+1);
        if(5-(i+1)>0) {
        cout<<"\nAttempt again, choose a number more than last time: ";
         }
@@ -35,8 +36,8 @@ int main()
   }
   if(i==5)
   {
-    cout<<"\n\nUnlucky, you ran out of guesses, better luck next time.";
-    cout<<"\nThe number I was looking for is: "<<number;
+    cout<<"\n\nUnlucky, you ran out of guesses without getting the Magic number,\n better luck next time.";
+    cout<<"\nThe Magic number I was looking for is: "<<number;
   }
     return 0;
 }
