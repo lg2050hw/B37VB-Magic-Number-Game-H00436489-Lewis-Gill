@@ -12,7 +12,7 @@ int main()
     srand(time(0));
     number=rand()%51;
    
-    cout<<" Wlcome to Magic Number\n Guess a number from 1-50, you have 5 attempts to guess: ";                /*intro to game with small explanation */
+    cout<<" Welcome to Magic Number\n Guess a number from 1-50, you have 5 attempts to guess: ";                /*intro to game with small explanation */
     for(i=0;i<5;i++)
    
     {
