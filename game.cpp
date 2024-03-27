@@ -33,7 +33,7 @@ int main()
     {
        cout<<"\nYou guessed more than Magic Number, Attempts remaining: "<<5-(i+1);                             /* phrase for when guessed above the number */
        if(5-(i+1)>0) {
-       cout<<"\nAttempt again, choose a number more than last time: ";                                          /* phrase for needing to guess less than last time */
+       cout<<"\nAttempt again, choose a number less than last time: ";                                          /* phrase for needing to guess less than last time */
         }
      }
   }
